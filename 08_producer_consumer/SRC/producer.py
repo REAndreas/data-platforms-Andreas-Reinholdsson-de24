@@ -11,7 +11,7 @@ with open(data_path / "jokes.json", "r") as file:
 
 app = Application(broker_address="localhost:9092", consumer_group="text-splitter")
 
-jokes_topic = app.topic(name ="Jokes", value_serializer="json")
+jokes_topic = app.topic(name ="jokes", value_serializer="json")
 
 # print(jokes_topic)
 
